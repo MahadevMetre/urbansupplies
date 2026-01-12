@@ -209,3 +209,34 @@ footer {
 .dot.active {
   background: var(--blue);
 }
+
+
+/* FAQ */
+.faq {
+  padding: 80px;
+  background: #fafafa;
+}
+
+.faq h2 {
+  margin-bottom: 32px;
+}
+
+.faq-item {
+  margin-bottom: 20px;
+}
+
+.faq-item strong {
+  display: block;
+  margin-bottom: 4px;
+}
+
+/* FOOTER */
+footer p {
+  margin-bottom: 6px;
+}
+
+footer .copyright {
+  margin-top: 20px;
+  font-size: 0.8rem;
+  color: #999;
+}
