@@ -215,6 +215,85 @@ function initNewsletter() {
   }
 }
 
+// YouTube Video Player
+function initVideoPlayer() {
+  const videoPreview = document.getElementById('videoPreview');
+  const videoEmbed = document.getElementById('videoEmbed');
+  const youtubeVideo = document.getElementById('youtubeVideo');
+  const closeVideo = document.getElementById('closeVideo');
+  
+  if (!videoPreview) return;
+  
+  // YouTube video ID from your link: https://youtu.be/RJwy7DDF_c0
+  const videoId = 'RJwy7DDF_c0';
+  
+  // Open video when clicking preview
+  videoPreview.addEventListener('click', () => {
+    // Hide preview, show embedded video
+    videoPreview.style.display = 'none';
+    videoEmbed.style.display = 'block';
+    
+    // Set the iframe src with autoplay and no related videos
+    youtubeVideo.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0&modestbranding=1&showinfo=0`;
+    
+    // Add a loading state
+    youtubeVideo.style.opacity = '0';
+    setTimeout(() => {
+      youtubeVideo.style.opacity = '1';
+      youtubeVideo.style.transition = 'opacity 0.3s ease';
+    }, 300);
+    
+    // Track video play (optional for analytics)
+    console.log('Video started playing');
+    
+    // Add a class to body to prevent scrolling while video is open
+    document.body.classList.add('video-open');
+  });
+  
+  // Close video
+  closeVideo.addEventListener('click', (e) => {
+    e.stopPropagation(); // Prevent event bubbling
+    
+    // Show preview, hide embedded video
+    videoPreview.style.display = 'block';
+    videoEmbed.style.display = 'none';
+    
+    // Stop the video by removing src
+    youtubeVideo.src = '';
+    
+    // Remove video-open class
+    document.body.classList.remove('video-open');
+    
+    console.log('Video closed');
+  });
+  
+  // Close video when clicking outside (optional)
+  videoEmbed.addEventListener('click', (e) => {
+    if (e.target === videoEmbed) {
+      closeVideo.click();
+    }
+  });
+  
+  // Close video with Escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && videoEmbed.style.display === 'block') {
+      closeVideo.click();
+    }
+  });
+  
+  // Lazy load the thumbnail (if needed)
+  const thumbnailImg = document.querySelector('.thumbnail-img');
+  if (thumbnailImg) {
+    // Force high-quality thumbnail
+    thumbnailImg.src = `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`;
+    
+    // Fallback to high quality if maxresdefault doesn't exist
+    thumbnailImg.onerror = function() {
+      this.src = `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
+    };
+  }
+}
+
 // Animate Elements on Scroll
 function initScrollAnimations() {
   const observerOptions = {
@@ -231,7 +310,7 @@ function initScrollAnimations() {
   }, observerOptions);
   
   // Observe elements you want to animate
-  document.querySelectorAll('.category-card, .product-card, .benefit-card, .step').forEach(el => {
+  document.querySelectorAll('.category-card, .product-card, .benefit-card, .step, .video-feature').forEach(el => {
     observer.observe(el);
   });
 }
@@ -244,13 +323,14 @@ document.addEventListener('DOMContentLoaded', () => {
   initQuickAdd();
   initSmoothScroll();
   initNewsletter();
+  initVideoPlayer(); // Initialize video player
   initScrollAnimations();
   
   // Add animation classes
   document.body.classList.add('loaded');
 });
 
-// Add some CSS animations
+// Add CSS animations for scroll effects
 const style = document.createElement('style');
 style.textContent = `
   .animate-in {
@@ -268,7 +348,7 @@ style.textContent = `
     }
   }
   
-  .category-card, .product-card, .benefit-card, .step {
+  .category-card, .product-card, .benefit-card, .step, .video-feature {
     opacity: 0;
   }
   
@@ -292,5 +372,14 @@ style.textContent = `
   .step:nth-child(1) { animation-delay: 0.1s; }
   .step:nth-child(2) { animation-delay: 0.2s; }
   .step:nth-child(3) { animation-delay: 0.3s; }
+  
+  .video-feature:nth-child(1) { animation-delay: 0.1s; }
+  .video-feature:nth-child(2) { animation-delay: 0.2s; }
+  .video-feature:nth-child(3) { animation-delay: 0.3s; }
+  
+  /* Prevent scrolling when video is open */
+  body.video-open {
+    overflow: hidden;
+  }
 `;
 document.head.appendChild(style);

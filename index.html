@@ -427,10 +427,65 @@
       </div>
     </div>
     
-    <div class="demo-video">
-      <div class="video-placeholder">
-        <i class="fas fa-play-circle"></i>
-        <p>See how easy it is to shop with us</p>
+    <!-- DEMO VIDEO -->
+    <div class="demo-video-section">
+      <div class="section-header">
+        <h2>See How Easy It Is To Shop</h2>
+        <p>Watch our quick demo to see the Urban Supplies experience</p>
+      </div>
+
+      <div class="video-container">
+        <div class="video-wrapper">
+          <!-- Video Preview Thumbnail -->
+          <div class="video-preview" id="videoPreview">
+            <div class="video-thumbnail">
+              <img src="https://img.youtube.com/vi/RJwy7DDF_c0/maxresdefault.jpg" alt="How to shop with Urban Supplies" class="thumbnail-img">
+              <div class="play-overlay">
+                <div class="play-button">
+                  <i class="fas fa-play"></i>
+                </div>
+                <p>Click to watch our shopping demo</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Embedded Video (hidden initially) -->
+          <div class="video-embed" id="videoEmbed" style="display: none;">
+            <div class="video-responsive">
+              <iframe 
+                id="youtubeVideo"
+                width="560" 
+                height="315" 
+                src="" 
+                title="How to shop with Urban Supplies" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+              </iframe>
+              <button class="close-video" id="closeVideo">
+                <i class="fas fa-times"></i> Close Video
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="video-features">
+          <div class="video-feature">
+            <i class="fas fa-bolt"></i>
+            <h4>Quick & Easy</h4>
+            <p>Order in under 2 minutes</p>
+          </div>
+          <div class="video-feature">
+            <i class="fas fa-comments"></i>
+            <h4>Personal Support</h4>
+            <p>Real-time WhatsApp assistance</p>
+          </div>
+          <div class="video-feature">
+            <i class="fas fa-truck"></i>
+            <h4>Fast Delivery</h4>
+            <p>Same-day delivery in Mumbai</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
