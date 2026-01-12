@@ -211,7 +211,7 @@ footer {
 }
 
 
-/* FAQ */
+/* FAQ ACCORDION */
 .faq {
   padding: 80px;
   background: #fafafa;
@@ -222,13 +222,45 @@ footer {
 }
 
 .faq-item {
-  margin-bottom: 20px;
+  border-bottom: 1px solid #eaeaea;
 }
 
-.faq-item strong {
-  display: block;
-  margin-bottom: 4px;
+.faq-question {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 20px 0;
+  font-size: 1rem;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  text-align: left;
 }
+
+.faq-icon {
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  color: var(--light);
+  padding-right: 24px;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 200px;
+  padding-bottom: 16px;
+}
+
+.faq-item.active .faq-icon {
+  transform: rotate(45deg);
+}
+
 
 /* FOOTER */
 footer p {
@@ -239,4 +271,56 @@ footer .copyright {
   margin-top: 20px;
   font-size: 0.8rem;
   color: #999;
+}
+
+
+/* FOOTER – BIG BRAND STYLE */
+.footer {
+  background: #fafafa;
+  padding: 40px 80px 20px;
+  font-size: 0.9rem;
+  color: var(--dark);
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.footer-brand strong {
+  font-size: 1.1rem;
+}
+
+.footer-brand p {
+  color: var(--light);
+}
+
+.footer-info p,
+.footer-contact p {
+  margin-bottom: 6px;
+  color: var(--light);
+}
+
+.footer-bottom {
+  margin-top: 30px;
+  padding-top: 16px;
+  border-top: 1px solid #eaeaea;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #999;
+}
+
+/* MOBILE FOOTER */
+@media (max-width: 768px) {
+  .footer {
+    padding: 40px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
 }
