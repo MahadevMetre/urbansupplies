@@ -3,193 +3,681 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Urban Supplies | Shop Everything Online</title>
-
+  <title>Urban Supplies | Everything You Need at Unbeatable Prices</title>
+  
+  <!-- Meta tags for SEO & social sharing -->
+  <meta name="description" content="Shop daily essentials at Mumbai's lowest prices. Fast delivery, secure payments, and personal WhatsApp shopping assistance.">
+  <meta property="og:title" content="Urban Supplies | Budget Shopping Made Easy">
+  <meta property="og:description" content="Get everything you need delivered across Mumbai at honest prices.">
+  
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- HERO -->
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/916361765499" class="float-whatsapp" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+    <span>Chat Now</span>
+  </a>
+
+  <!-- Top Announcement Bar -->
+  <div class="announcement">
+    <div class="announcement-content">
+      <i class="fas fa-truck"></i>
+      <span>🚚 Free delivery on orders above ₹499 | Same-day delivery in Mumbai</span>
+    </div>
+  </div>
+
+  <!-- HERO SECTION -->
   <section class="hero">
     <div class="hero-left">
       <img src="logo.jpeg" alt="Urban Supplies Logo" class="logo" />
+      
+      <div class="hero-tag">
+        <span class="tag">🔥 TRENDING</span>
+        <span class="tag">💰 BUDGET FRIENDLY</span>
+      </div>
 
-      <h1>Everything You Need. One Budget.</h1>
-      <p>
-        Affordable daily-use products delivered across Mumbai.<br>
-        <strong>Trusted by local buyers for quality and value.</strong>
+      <h1>Everything You Need.<br><span class="gradient-text">One Budget.</span></h1>
+      
+      <p class="hero-subtitle">
+        Mumbai's #1 budget essentials store. Get daily-use products at <strong>30-50% lower prices</strong> than big platforms.
       </p>
 
-      <a class="btn-primary" href="https://wa.me/916361765499" target="_blank">
-        Shop on WhatsApp
-      </a>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-number">2,500+</span>
+          <span class="stat-label">Happy Customers</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">98%</span>
+          <span class="stat-label">Satisfaction Rate</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">24/7</span>
+          <span class="stat-label">WhatsApp Support</span>
+        </div>
+      </div>
+
+      <div class="hero-cta">
+        <a class="btn-primary pulse" href="https://wa.me/916361765499" target="_blank">
+          <i class="fab fa-whatsapp"></i> Shop on WhatsApp
+        </a>
+        <a class="btn-secondary" href="#categories">
+          <i class="fas fa-store"></i> Browse Categories
+        </a>
+      </div>
+
+      <div class="trust-badges">
+        <div class="badge">
+          <i class="fas fa-shield-alt"></i>
+          <span>100% Secure</span>
+        </div>
+        <div class="badge">
+          <i class="fas fa-rupee-sign"></i>
+          <span>Lowest Price</span>
+        </div>
+        <div class="badge">
+          <i class="fas fa-clock"></i>
+          <span>Fast Delivery</span>
+        </div>
+      </div>
     </div>
 
     <div class="hero-right">
-      <div class="slider">
-        <div class="slides">
-          <div class="slide">
-            <img src="ChatGPT Image Jan 13, 2026, 12_15_56 AM.png" alt="Offer 1" />
+      <div class="slider-container">
+        <div class="slider">
+          <div class="slides">
+            <div class="slide active">
+              <img src="ChatGPT Image Jan 13, 2026, 12_15_56 AM.png" alt="Special Offer 1" />
+              <div class="slide-overlay">
+                <h3>MEGA SALE</h3>
+                <p>Up to 60% OFF</p>
+              </div>
+            </div>
+            <div class="slide">
+              <img src="image_0903.jpg" alt="Special Offer 2" />
+              <div class="slide-overlay">
+                <h3>FREE DELIVERY</h3>
+                <p>On orders above ₹499</p>
+              </div>
+            </div>
+            <div class="slide">
+              <img src="image_0902.jpg" alt="Special Offer 3" />
+              <div class="slide-overlay">
+                <h3>NEW ARRIVALS</h3>
+                <p>Best quality essentials</p>
+              </div>
+            </div>
+            <div class="slide">
+              <img src="ChatGPT Image Jan 12, 2026, 01_45_33 PM.png" alt="Special Offer 4" />
+              <div class="slide-overlay">
+                <h3>CASHBACK</h3>
+                <p>Get ₹50 on first order</p>
+              </div>
+            </div>
           </div>
-          <div class="slide">
-            <img src="image_0903.jpg" alt="Offer 2" />
+          
+          <div class="slider-nav">
+            <button class="nav-btn prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="nav-btn next"><i class="fas fa-chevron-right"></i></button>
           </div>
-          <div class="slide">
-            <img src="image_0902.jpg" alt="Offer 3" />
+          
+          <div class="dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
           </div>
-                    <div class="slide">
-            <img src="ChatGPT Image Jan 12, 2026, 01_45_33 PM.png" alt="Offer 3" />
-          </div>
-                    <div class="slide">
-            <img src="image_0902.jpg" alt="Offer 3" />
         </div>
-
-        <div class="dots">
-          <span class="dot active"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
+      </div>
+      
+      <div class="offer-card">
+        <div class="offer-icon">
+          <i class="fas fa-gift"></i>
+        </div>
+        <div class="offer-content">
+          <h4>First Order Bonus!</h4>
+          <p>Get ₹50 cashback + free delivery on your first order</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- TRUST STRIP -->
-  <section class="trust">
-    <div>Best Budget Prices</div>
-    <div>Fast Local Delivery</div>
-    <div>Wide Product Range</div>
-    <div>Secure Payments</div>
+  <section class="trust-strip">
+    <div class="trust-item">
+      <i class="fas fa-bolt"></i>
+      <div>
+        <h4>Same-Day Delivery</h4>
+        <p>Across Mumbai</p>
+      </div>
+    </div>
+    <div class="trust-item">
+      <i class="fas fa-rupee-sign"></i>
+      <div>
+        <h4>Price Match Guarantee</h4>
+        <p>Lowest prices assured</p>
+      </div>
+    </div>
+    <div class="trust-item">
+      <i class="fas fa-shield-alt"></i>
+      <div>
+        <h4>Secure Payment</h4>
+        <p>100% safe transactions</p>
+      </div>
+    </div>
+    <div class="trust-item">
+      <i class="fas fa-headset"></i>
+      <div>
+        <h4>24/7 Support</h4>
+        <p>Instant WhatsApp help</p>
+      </div>
+    </div>
   </section>
 
   <!-- CATEGORIES -->
-  <section class="categories">
-    <h2>Everyday Products at Honest Prices</h2>
+  <section class="categories" id="categories">
+    <div class="section-header">
+      <h2>Shop by Category</h2>
+      <p>Everything you need for daily life</p>
+    </div>
 
     <div class="category-grid">
-      <div class="card">Mobile Accessories</div>
-      <div class="card">Home Essentials</div>
-      <div class="card">Kitchen Items</div>
-      <div class="card">Personal Care</div>
-      <div class="card">Fashion Basics</div>
-      <div class="card">Daily Utilities</div>
+      <a href="https://wa.me/916361765499?text=Hi!%20I%20want%20to%20browse%20Mobile%20Accessories" class="category-card" target="_blank">
+        <div class="category-icon">
+          <i class="fas fa-mobile-alt"></i>
+        </div>
+        <h3>Mobile Accessories</h3>
+        <p>Cases, chargers, earphones & more</p>
+        <span class="shop-now">Shop Now <i class="fas fa-arrow-right"></i></span>
+      </a>
+      
+      <a href="https://wa.me/916361765499?text=Hi!%20I%20want%20to%20browse%20Home%20Essentials" class="category-card" target="_blank">
+        <div class="category-icon">
+          <i class="fas fa-home"></i>
+        </div>
+        <h3>Home Essentials</h3>
+        <p>Cleaning, storage & decor</p>
+        <span class="shop-now">Shop Now <i class="fas fa-arrow-right"></i></span>
+      </a>
+      
+      <a href="https://wa.me/916361765499?text=Hi!%20I%20want%20to%20browse%20Kitchen%20Items" class="category-card" target="_blank">
+        <div class="category-icon">
+          <i class="fas fa-utensils"></i>
+        </div>
+        <h3>Kitchen Items</h3>
+        <p>Cookware, utensils & more</p>
+        <span class="shop-now">Shop Now <i class="fas fa-arrow-right"></i></span>
+      </a>
+      
+      <a href="https://wa.me/916361765499?text=Hi!%20I%20want%20to%20browse%20Personal%20Care" class="category-card" target="_blank">
+        <div class="category-icon">
+          <i class="fas fa-soap"></i>
+        </div>
+        <h3>Personal Care</h3>
+        <p>Grooming, hygiene & wellness</p>
+        <span class="shop-now">Shop Now <i class="fas fa-arrow-right"></i></span>
+      </a>
+      
+      <a href="https://wa.me/916361765499?text=Hi!%20I%20want%20to%20browse%20Fashion%20Basics" class="category-card" target="_blank">
+        <div class="category-icon">
+          <i class="fas fa-tshirt"></i>
+        </div>
+        <h3>Fashion Basics</h3>
+        <p>Affordable daily wear</p>
+        <span class="shop-now">Shop Now <i class="fas fa-arrow-right"></i></span>
+      </a>
+      
+      <a href="https://wa.me/916361765499?text=Hi!%20I%20want%20to%20browse%20Daily%20Utilities" class="category-card" target="_blank">
+        <div class="category-icon">
+          <i class="fas fa-tools"></i>
+        </div>
+        <h3>Daily Utilities</h3>
+        <p>Everything else you need</p>
+        <span class="shop-now">Shop Now <i class="fas fa-arrow-right"></i></span>
+      </a>
     </div>
   </section>
 
-  <!-- WHY -->
-  <section class="why">
-    <h2>Why Urban Supplies?</h2>
-    <p>
-      Big platforms inflate prices with commissions and ads.<br>
-      Urban Supplies focuses on essentials, local sourcing, and direct delivery —
-      so you pay only for the product, not the platform.
-    </p>
+  <!-- FEATURED PRODUCTS -->
+  <section class="featured">
+    <div class="section-header">
+      <h2>Today's Top Picks</h2>
+      <p>Most loved by our customers</p>
+    </div>
 
-    <ul>
-      <li>Direct sourcing</li>
-      <li>No middlemen</li>
-      <li>Local Mumbai delivery</li>
-      <li>WhatsApp support</li>
-    </ul>
+    <div class="products-grid">
+      <div class="product-card">
+        <div class="product-badge">BESTSELLER</div>
+        <div class="product-image">
+          <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Phone Case">
+        </div>
+        <div class="product-info">
+          <h3>Premium Phone Cases</h3>
+          <div class="price">
+            <span class="current">₹199</span>
+            <span class="original">₹499</span>
+            <span class="discount">60% OFF</span>
+          </div>
+          <button class="btn-quick-add" data-product="Premium Phone Cases">
+            <i class="fas fa-cart-plus"></i> Quick Add
+          </button>
+        </div>
+      </div>
+      
+      <div class="product-card">
+        <div class="product-badge">TRENDING</div>
+        <div class="product-image">
+          <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Water Bottle">
+        </div>
+        <div class="product-info">
+          <h3>Insulated Water Bottles</h3>
+          <div class="price">
+            <span class="current">₹299</span>
+            <span class="original">₹699</span>
+            <span class="discount">57% OFF</span>
+          </div>
+          <button class="btn-quick-add" data-product="Insulated Water Bottles">
+            <i class="fas fa-cart-plus"></i> Quick Add
+          </button>
+        </div>
+      </div>
+      
+      <div class="product-card">
+        <div class="product-badge">LIMITED STOCK</div>
+        <div class="product-image">
+          <img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Kitchen Set">
+        </div>
+        <div class="product-info">
+          <h3>Kitchen Tool Set</h3>
+          <div class="price">
+            <span class="current">₹399</span>
+            <span class="original">₹999</span>
+            <span class="discount">60% OFF</span>
+          </div>
+          <button class="btn-quick-add" data-product="Kitchen Tool Set">
+            <i class="fas fa-cart-plus"></i> Quick Add
+          </button>
+        </div>
+      </div>
+      
+      <div class="product-card">
+        <div class="product-badge">NEW</div>
+        <div class="product-image">
+          <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Personal Care">
+        </div>
+        <div class="product-info">
+          <h3>Grooming Kit</h3>
+          <div class="price">
+            <span class="current">₹249</span>
+            <span class="original">₹599</span>
+            <span class="discount">58% OFF</span>
+          </div>
+          <button class="btn-quick-add" data-product="Grooming Kit">
+            <i class="fas fa-cart-plus"></i> Quick Add
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section class="why-us">
+    <div class="section-header">
+      <h2>Why Shop With Urban Supplies?</h2>
+      <p>Experience shopping that actually saves you money</p>
+    </div>
+
+    <div class="benefits-grid">
+      <div class="benefit-card">
+        <div class="benefit-icon">
+          <i class="fas fa-money-bill-wave"></i>
+        </div>
+        <h3>Save 30-50%</h3>
+        <p>No middlemen, no commissions, no hidden fees. You pay only for the product.</p>
+      </div>
+      
+      <div class="benefit-card">
+        <div class="benefit-icon">
+          <i class="fas fa-bolt"></i>
+        </div>
+        <h3>Lightning Fast</h3>
+        <p>Same-day delivery across Mumbai. We deliver faster than big platforms.</p>
+      </div>
+      
+      <div class="benefit-card">
+        <div class="benefit-icon">
+          <i class="fas fa-user-check"></i>
+        </div>
+        <h3>Personal Shopping</h3>
+        <p>Get personalized recommendations and assistance via WhatsApp.</p>
+      </div>
+      
+      <div class="benefit-card">
+        <div class="benefit-icon">
+          <i class="fas fa-award"></i>
+        </div>
+        <h3>Quality Assured</h3>
+        <p>Every product is quality-checked before delivery. 7-day return policy.</p>
+      </div>
+    </div>
+
+    <div class="comparison">
+      <h3>See The Difference</h3>
+      <div class="comparison-table">
+        <div class="comparison-row">
+          <div class="comparison-cell feature">Delivery Time</div>
+          <div class="comparison-cell us">Same Day</div>
+          <div class="comparison-cell others">2-3 Days</div>
+        </div>
+        <div class="comparison-row">
+          <div class="comparison-cell feature">Prices</div>
+          <div class="comparison-cell us">₹199-₹499</div>
+          <div class="comparison-cell others">₹399-₹999</div>
+        </div>
+        <div class="comparison-row">
+          <div class="comparison-cell feature">Support</div>
+          <div class="comparison-cell us">Personal WhatsApp</div>
+          <div class="comparison-cell others">Bots & Emails</div>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- HOW IT WORKS -->
-  <section class="how">
-    <div class="how-card">
-      <h3>1. Browse</h3>
-      <p>Explore essential products</p>
+  <section class="how-it-works">
+    <div class="section-header">
+      <h2>Shop in 3 Simple Steps</h2>
+      <p>Easier than any other platform</p>
     </div>
-    <div class="how-card">
-      <h3>2. Order</h3>
-      <p>Place order on WhatsApp</p>
+
+    <div class="steps">
+      <div class="step">
+        <div class="step-number">1</div>
+        <div class="step-icon">
+          <i class="fas fa-search"></i>
+        </div>
+        <h3>Browse & Select</h3>
+        <p>Explore our categories or send us your requirement</p>
+      </div>
+      
+      <div class="step">
+        <div class="step-number">2</div>
+        <div class="step-icon">
+          <i class="fab fa-whatsapp"></i>
+        </div>
+        <h3>WhatsApp Order</h3>
+        <p>Send product details on WhatsApp. Get instant confirmation.</p>
+      </div>
+      
+      <div class="step">
+        <div class="step-number">3</div>
+        <div class="step-icon">
+          <i class="fas fa-truck"></i>
+        </div>
+        <h3>Fast Delivery</h3>
+        <p>Get products delivered same day. Pay cash or UPI on delivery.</p>
+      </div>
     </div>
-    <div class="how-card">
-      <h3>3. Deliver</h3>
-      <p>Fast local delivery</p>
+    
+    <div class="demo-video">
+      <div class="video-placeholder">
+        <i class="fas fa-play-circle"></i>
+        <p>See how easy it is to shop with us</p>
+      </div>
     </div>
   </section>
 
-<!-- FAQ -->
-<section class="faq">
-  <h2>FAQs</h2>
-
-  <div class="faq-item">
-    <button class="faq-question">
-      How do I order?
-      <span class="faq-icon">+</span>
-    </button>
-    <div class="faq-answer">
-      Simply message us on WhatsApp and our team will assist you.
+  <!-- TESTIMONIALS -->
+  <section class="testimonials">
+    <div class="section-header">
+      <h2>What Our Customers Say</h2>
+      <p>Join 2,500+ satisfied Mumbaikars</p>
     </div>
-  </div>
 
-  <div class="faq-item">
-    <button class="faq-question">
-      How do I pay?
-      <span class="faq-icon">+</span>
-    </button>
-    <div class="faq-answer">
-      We accept UPI and cash on delivery (as available).
+    <div class="testimonial-slider">
+      <div class="testimonial active">
+        <div class="rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <p class="testimonial-text">"Finally, a store that understands Mumbai's budget! Got phone accessories at half the price of Amazon. Delivery was same-day!"</p>
+        <div class="customer">
+          <div class="customer-info">
+            <h4>Rahul Sharma</h4>
+            <p>Andheri West</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="testimonial">
+        <div class="rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+        <p class="testimonial-text">"The personal WhatsApp support is amazing! They helped me choose the right kitchen items. Saved me ₹1200 compared to BigBasket."</p>
+        <div class="customer">
+          <div class="customer-info">
+            <h4>Priya Patel</h4>
+            <p>Bandra</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="testimonial">
+        <div class="rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <p class="testimonial-text">"Been ordering weekly groceries from Urban Supplies for 3 months. Prices are consistently lower, and quality is always good."</p>
+        <div class="customer">
+          <div class="customer-info">
+            <h4>Sameer Khan</h4>
+            <p>Powai</p>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-
-  <div class="faq-item">
-    <button class="faq-question">
-      Where do you deliver?
-      <span class="faq-icon">+</span>
-    </button>
-    <div class="faq-answer">
-      We currently deliver across Mumbai.
+    
+    <div class="testimonial-nav">
+      <button class="testimonial-prev"><i class="fas fa-chevron-left"></i></button>
+      <div class="testimonial-dots">
+        <span class="testimonial-dot active"></span>
+        <span class="testimonial-dot"></span>
+        <span class="testimonial-dot"></span>
+      </div>
+      <button class="testimonial-next"><i class="fas fa-chevron-right"></i></button>
     </div>
-  </div>
-
-  <div class="faq-item">
-    <button class="faq-question">
-      Is this a real store?
-      <span class="faq-icon">+</span>
-    </button>
-    <div class="faq-answer">
-      Yes. Urban Supplies is a Mumbai-based local business focused on budget essentials.
-    </div>
-  </div>
-</section>
-
-  <!-- CTA -->
-  <section class="cta">
-    <h2>Start Shopping the Smart Way</h2>
-    <a class="btn-primary" href="https://wa.me/916361765499" target="_blank">
-      Chat on WhatsApp
-    </a>
   </section>
 
-<!-- FOOTER -->
-<footer class="footer">
-  <div class="footer-container">
-
-    <div class="footer-brand">
-      <strong>Urban Supplies</strong>
-      <p>Shop Everything Online</p>
+  <!-- FAQ -->
+  <section class="faq">
+    <div class="section-header">
+      <h2>Frequently Asked Questions</h2>
+      <p>Quick answers to common questions</p>
     </div>
 
-    <div class="footer-info">
-      <p>📍 Mumbai</p>
-      <p>📞 +91 63617 65499</p>
+    <div class="faq-grid">
+      <div class="faq-item active">
+        <div class="faq-question">
+          <h3>How do I place an order?</h3>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="faq-answer">
+          <p>Simply message us on WhatsApp with the products you want. Our team will share prices, confirm availability, and arrange delivery.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">
+          <h3>What payment methods do you accept?</h3>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="faq-answer">
+          <p>We accept UPI (Google Pay, PhonePe, Paytm), cash on delivery, and bank transfers. All payments are 100% secure.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">
+          <h3>What are your delivery areas and charges?</h3>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="faq-answer">
+          <p>We deliver across Mumbai. Delivery is FREE on orders above ₹499. Below ₹499, a nominal ₹30 delivery charge applies.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">
+          <h3>Can I return or exchange products?</h3>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="faq-answer">
+          <p>Yes! We offer a 7-day return policy for defective or damaged products. Contact us on WhatsApp for instant return assistance.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">
+          <h3>How do I get the best deals?</h3>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="faq-answer">
+          <p>Follow us on WhatsApp for daily flash sales. First-time customers get ₹50 cashback. Regular customers get special loyalty discounts.</p>
+        </div>
+      </div>
+      
+      <div class="faq-item">
+        <div class="faq-question">
+          <h3>Are your products original and good quality?</h3>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="faq-answer">
+          <p>Absolutely! We source directly from manufacturers and wholesalers. Every product is quality-checked before delivery.</p>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <div class="footer-contact">
-      <p>✉️ urbansupplies.help@gmail.com</p>
-      <p>🌐 urbansupplies.com</p>
+  <!-- FINAL CTA -->
+  <section class="final-cta">
+    <div class="cta-container">
+      <h2>Ready to Start Saving?</h2>
+      <p>Join thousands of smart shoppers who save 30-50% on every purchase</p>
+      
+      <div class="cta-buttons">
+        <a href="https://wa.me/916361765499" class="btn-primary btn-large pulse" target="_blank">
+          <i class="fab fa-whatsapp"></i> Start Shopping Now
+        </a>
+        <a href="tel:+916361765499" class="btn-secondary btn-large">
+          <i class="fas fa-phone"></i> Call Us Now
+        </a>
+      </div>
+      
+      <div class="cta-guarantee">
+        <div class="guarantee-item">
+          <i class="fas fa-shield-alt"></i>
+          <span>100% Satisfaction Guarantee</span>
+        </div>
+        <div class="guarantee-item">
+          <i class="fas fa-clock"></i>
+          <span>Same-Day Delivery</span>
+        </div>
+        <div class="guarantee-item">
+          <i class="fas fa-rupee-sign"></i>
+          <span>Lowest Price Guarantee</span>
+        </div>
+      </div>
     </div>
+  </section>
 
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <div class="footer-brand">
+          <img src="logo.jpeg" alt="Urban Supplies" class="footer-logo">
+          <h3>Urban Supplies</h3>
+          <p>Mumbai's Favourite Budget Store</p>
+        </div>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="https://wa.me/916361765499" target="_blank"><i class="fab fa-whatsapp"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+      
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#categories">Shop Categories</a></li>
+          <li><a href="#how-it-works">How It Works</a></li>
+          <li><a href="#testimonials">Customer Reviews</a></li>
+          <li><a href="#faq">FAQs</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h4>Contact Us</h4>
+        <ul>
+          <li><i class="fas fa-phone"></i> +91 63617 65499</li>
+          <li><i class="fas fa-envelope"></i> urbansupplies.help@gmail.com</li>
+          <li><i class="fas fa-map-marker-alt"></i> Mumbai, Maharashtra</li>
+          <li><i class="fas fa-clock"></i> 24/7 WhatsApp Support</li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h4>Newsletter</h4>
+        <p>Get exclusive deals and updates</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Your email address" required>
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <div class="payment-methods">
+        <i class="fab fa-google-pay"></i>
+        <i class="fab fa-cc-paypal"></i>
+        <i class="fas fa-credit-card"></i>
+        <i class="fas fa-university"></i>
+      </div>
+      <p>&copy; 2026 Urban Supplies. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </div>
+  </footer>
+
+  <!-- Quick Cart Modal -->
+  <div class="cart-modal">
+    <div class="cart-content">
+      <h3><i class="fas fa-check-circle"></i> Added to Cart!</h3>
+      <p class="cart-product-name">Product Name</p>
+      <p>Ready to order? Chat with us on WhatsApp!</p>
+      <div class="cart-buttons">
+        <a href="https://wa.me/916361765499" class="btn-primary" target="_blank">Complete Order</a>
+        <button class="btn-secondary close-cart">Continue Shopping</button>
+      </div>
+    </div>
   </div>
-
-  <div class="footer-bottom">
-    © 2026 Urban Supplies. All rights reserved.
-  </div>
-</footer>
-
 
   <script src="script.js"></script>
 </body>
